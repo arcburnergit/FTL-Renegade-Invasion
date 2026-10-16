@@ -1,0 +1,291 @@
+
+<!--Crystal-->
+<FTL>
+<weaponBlueprint name="RI_MINOR_CRYSTAL_1">
+	<type>MISSILES</type>
+	<flavorType>Crystalline Tech</flavorType>
+	<title>The Dark Shard</title>
+	<short>Dark Shard</short>
+	<desc>This Crystal weapon grants the weapon to the right stealth, preventing it from reducing your cloak timer when firing.</desc>
+	<tooltip>Pierces 1 shield; fires 2 crystals that deal 1 damage each.</tooltip>
+	<damage>1</damage>
+	<shots>2</shots>
+	<mv-stealth/>
+	<sp>2</sp>
+	<lockdown>1</lockdown>
+	<fireChance>0</fireChance>
+	<breachChance>1</breachChance>
+	<stunChance>4</stunChance>
+	<cooldown>12</cooldown>
+	<power>1</power>
+	<speed>50</speed>
+	<cost>65</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<image>crystal_ri_minor_1</image>
+	<launchSounds>
+		<sound>lightLaser1</sound>
+		<sound>lightLaser2</sound>
+		<sound>lightLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>crystalExplosion_small</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<explosion>explosion_crystal_2</explosion>
+	<weaponArt>ri_minor_crystal_1</weaponArt>
+	<iconImage>crystal</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="RI_MINOR_CRYSTAL_2">
+	<type>MISSILES</type>
+	<flavorType>Crystalline Tech</flavorType>
+	<title>Citrine Accelerator</title>
+	<short>Citrine</short>
+	<desc>This Crystal weapon gains one damage when it pierces the enemy ship's shield.</desc>
+	<tooltip>Pierces 1 shield; fires 1 crystal that deals 2 damage.</tooltip>
+	<damage>2</damage>
+	<shots>1</shots>
+	<sp>2</sp>
+	<lockdown>1</lockdown>
+	<fireChance>0</fireChance>
+	<breachChance>1</breachChance>
+	<stunChance>6</stunChance>
+	<cooldown>10</cooldown>
+	<power>1</power>
+	<speed>50</speed>
+	<cost>65</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<image>crystal_ri_minor_2</image>
+	<launchSounds>
+		<sound>smallMissile1</sound>
+		<sound>smallMissile2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>crystalExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<explosion>explosion_crystal</explosion>
+	<weaponArt>ri_minor_crystal_2</weaponArt>
+	<iconImage>crystalH</iconImage>
+</weaponBlueprint>
+</FTL>
+
+<!--Dynasty-->
+<FTL>
+<weaponBlueprint name="DRONE_FIREBEAM_RI_MINOR_DYNASTY_1">
+	<type>BEAM</type>
+	<title>Drone Fire Beam</title>
+	<short>Drone Fire Beam</short>
+	<damage>0</damage>
+	<sp>0</sp>
+	<fireChance>8</fireChance>
+	<breachChance>0</breachChance>
+	<speed>10</speed>
+	<rarity>0</rarity>
+	<image>beam_contact</image>
+	<length>45</length>
+	<launchSounds>
+		<sound>beam1</sound>
+		<sound>beam1_2</sound>
+	</launchSounds>
+	<weaponArt>beam_fire</weaponArt> 
+</weaponBlueprint>
+<weaponBlueprint name="DRONE_HULLBEAM_RI_MINOR_DYNASTY_1">
+	<type>BEAM</type>
+	<title>Drone Hull Beam</title>
+	<short>Drone Hull Beam</short>
+	<damage>1</damage>
+	<hullBust>1</hullBust>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>1</breachChance>
+	<speed>12</speed>
+	<rarity>0</rarity>
+	<image>beam_contact</image>
+	<length>50</length>
+	<launchSounds>
+		<sound>beam1</sound>
+		<sound>beam1_2</sound>
+	</launchSounds>
+	<weaponArt>beam_hull</weaponArt> 
+</weaponBlueprint>
+
+<blueprintList name="LIST_TOGGLE_RI_MINOR_DYNASTY_1">
+	<name>RI_MINOR_DYNASTY_1_FIRE</name>
+	<name>RI_MINOR_DYNASTY_1_HULL</name>
+</blueprintList>
+<droneBlueprint name="RI_MINOR_DYNASTY_1_FIRE">
+	<type>COMBAT</type>
+	<tip>tip_toggle_combat</tip>
+	<title>Hellraiser [Fire]</title>
+	<short>Hell [F]</short>
+	<desc>[CURRENT MODE: Fire] Powerful Beam toggle Drone that can switch between Fire and Anti-Hull modes.</desc>
+	<power>3</power>
+	<cooldown>1000</cooldown>
+	<dodge>0</dodge>
+	<speed>12</speed>
+	<cost>60</cost>
+	<bp>3</bp>
+	<droneImage>drone_ri_minor_dynasty_1_f</droneImage>
+	<weaponBlueprint>DRONE_FIREBEAM_RI_MINOR_DYNASTY_1</weaponBlueprint>
+	<rarity>0</rarity>
+	<iconImage>combat</iconImage>
+</droneBlueprint>
+<droneBlueprint name="RI_MINOR_DYNASTY_1_HULL">
+	<type>COMBAT</type>
+	<tip>tip_toggle_combat</tip>
+	<title>Hellraiser [Hull]</title>
+	<short>Hell [H]</short>
+	<desc>[CURRENT MODE: Anti-Hull] Powerful Beam toggle Drone that can switch between Fire and Anti-Hull modes.</desc>
+	<power>3</power>
+	<cooldown>1000</cooldown>
+	<dodge>0</dodge>
+	<speed>13</speed>
+	<cost>60</cost>
+	<bp>3</bp>
+	<droneImage>drone_ri_minor_dynasty_1_h</droneImage>
+	<weaponBlueprint>DRONE_HULLBEAM_RI_MINOR_DYNASTY_1</weaponBlueprint>
+	<rarity>0</rarity>
+	<iconImage>combat</iconImage>
+</droneBlueprint>
+</FTL>
+
+<!--Engi-->
+<FTL>
+</FTL>
+
+<!--Federation-->
+<FTL>
+<augBlueprint name="RI_MINOR_FED_1">
+	<title>Total Ignition</title>
+	<desc>The following Lasers fire 1 additional projectile:
+		Burst Laser MK II
+		Burst Laser MK III
+		Burst Laser MK IV
+		Anti-Hull Laser MK II
+		Anti-Hull Laser MK III
+		Anti-Hull Laser MK III†
+		Pierce Laser MK I
+		Pierce Laser MK II
+		Adaptive Laser
+		Fire-Starter
+		Frost Laser MK I
+		Frost Laser MK II
+		Frost Laser MK II†</desc>
+	<cost>45</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<weaponBlueprint name="RI_MINOR_FED_2">
+	<type>LASER</type>
+	<title>Echo Burst</title>
+	<short>Echo Burst</short>
+	<desc>Upon impacting the enemy ship, the Lasers of this weapon will create 5 echo shards targetted at random rooms on the enemy ship, these will do 10 crew damage and stun for 1 second.</desc>
+	<tooltip>Fires 3 lasers, 1 damage each.</tooltip>
+	<damage>1</damage>
+	<accuracyMod>100</accuracyMod>
+	<shots>3</shots>
+	<speed>120</speed>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>12</cooldown>
+	<power>2</power>
+	<cost>80</cost>
+	<bp>7</bp>
+	<rarity>0</rarity>
+	<image>laser_ri_fed_2</image>
+	<launchSounds>
+		<sound>lightLaser1</sound>
+		<sound>lightLaser2</sound>
+		<sound>lightLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>ri_minor_fed_2</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+<weaponBlueprint name="RI_MINOR_FED_2_PHANTOM">
+	<type>LASER</type>
+	<title>Echo Shard</title>
+	<short>Echo Shard</short>
+	<desc>YOU SHOULD NEVER SEE THIS</desc>
+	<tooltip>Fires 3 lasers, 1 damage each.</tooltip>
+	<damage>0</damage>
+	<speed>60</speed>
+	<accuracyMod>100</accuracyMod>
+	<shots>3</shots>
+	<statBoosts>
+		<statBoost name="trueHealAmount">
+			<boostType>FLAT</boostType>
+			<amount>-20</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>ALL</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<priority>0</priority>
+			<maxStacks>999</maxStacks>
+			<duration>0.5</duration>
+		</statBoost>
+	</statBoosts>
+	<stun>1</stun>
+	<sp>10</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>12</cooldown>
+	<power>2</power>
+	<cost>80</cost>
+	<bp>7</bp>
+	<rarity>0</rarity>
+	<image>laser_ri_fed_2_phantom</image>
+	<launchSounds>
+		<sound>lightLaser1</sound>
+		<sound>lightLaser2</sound>
+		<sound>lightLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>ri_minor_fed_2</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+</FTL>
+
+<!---->

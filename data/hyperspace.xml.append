@@ -1,0 +1,6 @@
+<mod:findLike type="scripts" reverse="false">
+	<mod-append:script>data/ri_scripts/core.lua</mod-append:script>
+	<mod-append:script>data/ri_scripts/weapons.lua</mod-append:script>
+	<mod-append:script>data/ri_scripts/drones.lua</mod-append:script>
+	<mod-append:script>data/ri_scripts/augments.lua</mod-append:script>
+</mod:findLike>

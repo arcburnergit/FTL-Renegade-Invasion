@@ -1,0 +1,70 @@
+
+<!--Crystal-->
+<FTL>
+<animSheet name="ri_minor_crystal_1" w="168" h="53" fw="24" fh="53">weapons_ri_minor/ri_minor_crystal_1.png</animSheet>
+<weaponAnim name="ri_minor_crystal_1">
+	<sheet>ri_minor_crystal_1</sheet>
+	<desc length="7" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="15" y="15"/>
+	<mountPoint x="6" y="36"/>
+	<chargeImage>weapons/crystal_burst_1_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="crystal_ri_minor_1" w="32" h="80" fw="32" fh="80">projectiles/crystal_ri_minor_1.png</animSheet>
+<anim name="crystal_ri_minor_1">
+	<sheet>crystal_ri_minor_1</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="ri_minor_crystal_2" w="222" h="63" fw="37" fh="63">weapons_ri_minor/ri_minor_crystal_2.png</animSheet>
+<weaponAnim name="ri_minor_crystal_2">
+	<sheet>ri_minor_crystal_2</sheet>
+	<desc length="6" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="20" y="16"/>
+	<mountPoint x="8" y="45"/>
+	<chargeImage>weapons/crystal_heavy_1_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="crystal_ri_minor_2" w="32" h="80" fw="32" fh="80">projectiles/crystal_ri_minor_2.png</animSheet>
+<anim name="crystal_ri_minor_2">
+	<sheet>crystal_ri_minor_2</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+</FTL>
+
+<!--Dynasty-->
+<FTL>
+</FTL>
+
+<!--Engi-->
+<FTL>
+</FTL>
+
+<!--Federation-->
+<FTL>
+<animSheet name="ri_minor_fed_2" w="276" h="64" fw="23" fh="64">weapons_ri_minor/ri_minor_fed_2.png</animSheet>
+<weaponAnim name="ri_minor_fed_2">
+	<sheet>ri_minor_fed_2</sheet>
+	<desc length="12" x="0" y="0"/>
+	<chargedFrame>5</chargedFrame>
+	<fireFrame>8</fireFrame>
+	<firePoint  x="12" y="10"/>
+	<mountPoint x="3" y="44"/>
+</weaponAnim>
+<animSheet name="laser_ri_fed_2" w="60" h="20" fw="60" fh="20">projectiles/laser_ri_fed_2.png</animSheet>
+<anim name="laser_ri_fed_2">
+	<sheet>laser_ri_fed_2</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>0.3</time>
+</anim>
+<animSheet name="laser_ri_fed_2_phantom" w="60" h="20" fw="60" fh="20">projectiles/laser_ri_fed_2_phantom.png</animSheet>
+<anim name="laser_ri_fed_2_phantom">
+	<sheet>laser_ri_fed_2_phantom</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>0.3</time>
+</anim>
+</FTL>
