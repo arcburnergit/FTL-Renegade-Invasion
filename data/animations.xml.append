@@ -42,6 +42,254 @@
 
 <!--Engi-->
 <FTL>
+<animSheet name="ri_minor_crew_engi_1_manning" w="455" h="315" fw="35" fh="35">people/ri_minor_crew_engi_1_manning_base.png</animSheet>
+<animSheet name="ri_minor_crew_engi_1_manning_death" w="320" h="32" fh="32" fw="32">effects/explosion1_strip10.png</animSheet>
+<anim name="ri_minor_crew_engi_1_manning_death_right">
+	<sheet>ri_minor_crew_engi_1_manning_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_crew_engi_1_manning_death_left">
+	<sheet>ri_minor_crew_engi_1_manning_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_crew_engi_1_manning_walk_down">
+	<sheet>ri_minor_crew_engi_1_manning</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_crew_engi_1_manning_walk_right">
+	<sheet>ri_minor_crew_engi_1_manning</sheet>
+	<desc length="4" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_crew_engi_1_manning_walk_up">
+	<sheet>ri_minor_crew_engi_1_manning</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_crew_engi_1_manning_walk_left">
+	<sheet>ri_minor_crew_engi_1_manning</sheet>
+	<desc length="4" x="4" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_crew_engi_1_manning_type_right">
+	<sheet>ri_minor_crew_engi_1_manning</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>1</time>
+</anim>
+<anim name="ri_minor_crew_engi_1_manning_type_left">
+	<sheet>ri_minor_crew_engi_1_manning</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>1</time>
+</anim>
+<anim name="ri_minor_crew_engi_1_manning_type_up">
+	<sheet>ri_minor_crew_engi_1_manning</sheet>
+	<desc length="4" x="4" y="3"/>
+	<time>1</time>
+</anim>
+<anim name="ri_minor_crew_engi_1_manning_type_down">
+	<sheet>ri_minor_crew_engi_1_manning</sheet>
+	<desc length="4" x="0" y="3"/>
+	<time>1</time>
+</anim>
+<anim name="ri_minor_crew_engi_1_manning_shoot_down">
+	<sheet>ri_minor_crew_engi_1_manning</sheet>
+	<desc length="4" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_crew_engi_1_manning_shoot_right">
+	<sheet>ri_minor_crew_engi_1_manning</sheet>
+	<desc length="4" x="0" y="2"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_crew_engi_1_manning_shoot_up">
+	<sheet>ri_minor_crew_engi_1_manning</sheet>
+	<desc length="4" x="4" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_crew_engi_1_manning_shoot_left">
+	<sheet>ri_minor_crew_engi_1_manning</sheet>
+	<desc length="4" x="4" y="2"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_crew_engi_1_manning_power_down">
+	<sheet>ri_minor_crew_engi_1_manning</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_crew_engi_1_manning_power_up">
+	<sheet>ri_minor_crew_engi_1_manning</sheet>
+	<desc length="13" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_crew_engi_1_manning_portrait">
+	<sheet>ri_minor_crew_engi_1_manning</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="ri_minor_crew_engi_1_defend" w="280" h="210" fw="35" fh="35">people/ri_minor_crew_engi_1_defend_base.png</animSheet>
+<animSheet name="ri_minor_crew_engi_1_defend_death" w="320" h="32" fh="32" fw="32">effects/explosion1_strip10.png</animSheet>
+<anim name="ri_minor_crew_engi_1_defend_death_right">
+	<sheet>ri_minor_crew_engi_1_defend_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_crew_engi_1_defend_death_left">
+	<sheet>ri_minor_crew_engi_1_defend_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_crew_engi_1_defend_walk_down">
+	<sheet>ri_minor_crew_engi_1_defend</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_crew_engi_1_defend_walk_right">
+	<sheet>ri_minor_crew_engi_1_defend</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_crew_engi_1_defend_walk_up">
+	<sheet>ri_minor_crew_engi_1_defend</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_crew_engi_1_defend_walk_left">
+	<sheet>ri_minor_crew_engi_1_defend</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_crew_engi_1_defend_shoot_down">
+	<sheet>ri_minor_crew_engi_1_defend</sheet>
+	<desc length="3" x="0" y="3"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_crew_engi_1_defend_shoot_right">
+	<sheet>ri_minor_crew_engi_1_defend</sheet>
+	<desc length="3" x="3" y="3"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_crew_engi_1_defend_shoot_up">
+	<sheet>ri_minor_crew_engi_1_defend</sheet>
+	<desc length="3" x="2" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_crew_engi_1_defend_shoot_left">
+	<sheet>ri_minor_crew_engi_1_defend</sheet>
+	<desc length="3" x="5" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_crew_engi_1_defend_power_down">
+	<sheet>ri_minor_crew_engi_1_defend</sheet>
+	<desc length="7" x="0" y="2"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_crew_engi_1_defend_power_up">
+	<sheet>ri_minor_crew_engi_1_defend</sheet>
+	<desc length="7" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_crew_engi_1_defend_fly">
+	<sheet>ri_minor_crew_engi_1_defend</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<anim name="ri_minor_crew_engi_1_defend_portrait">
+	<sheet>ri_minor_crew_engi_1_defend</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="ri_minor_engi_3" w="248" h="58" fw="31" fh="58">weapons_ri_minor/ri_minor_engi_3.png</animSheet>
+<weaponAnim name="ri_minor_engi_3">
+	<sheet>ri_minor_engi_3</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>7</fireFrame>
+	<firePoint  x="17" y="9"/>
+	<mountPoint x="4" y="48"/>
+	<chargeImage>weapon_ion/ion_heavy_glow.png</chargeImage>
+</weaponAnim>
+</FTL>
+
+<!--Engineer-->
+<FTL>
+
+<animSheet name="ri_minor_crew_engineer_2" w="350" h="245" fw="35" fh="35">people/ri_minor_crew_engineer_2_base.png</animSheet>
+<animSheet name="ri_minor_crew_engineer_2_death" w="320" h="32" fh="32" fw="32">effects/explosion1_strip10.png</animSheet>
+<anim name="ri_minor_crew_engineer_2_death_right">
+	<sheet>ri_minor_crew_engineer_2_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_crew_engineer_2_death_left">
+	<sheet>ri_minor_crew_engineer_2_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_crew_engineer_2_walk_down">
+	<sheet>ri_minor_crew_engineer_2</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.5</time>
+</anim>
+<anim name="ri_minor_crew_engineer_2_walk_right">
+	<sheet>ri_minor_crew_engineer_2</sheet>
+	<desc length="4" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="ri_minor_crew_engineer_2_walk_up">
+	<sheet>ri_minor_crew_engineer_2</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.5</time>
+</anim>
+<anim name="ri_minor_crew_engineer_2_walk_left">
+	<sheet>ri_minor_crew_engineer_2</sheet>
+	<desc length="4" x="4" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="ri_minor_crew_engineer_2_shoot_down">
+	<sheet>ri_minor_crew_engineer_2</sheet>
+	<desc length="4" x="0" y="2"/>
+	<time>0.1</time>
+</anim>
+<anim name="ri_minor_crew_engineer_2_shoot_right">
+	<sheet>ri_minor_crew_engineer_2</sheet>
+	<desc length="4" x="4" y="2"/>
+	<time>0.1</time>
+</anim>
+<anim name="ri_minor_crew_engineer_2_shoot_up">
+	<sheet>ri_minor_crew_engineer_2</sheet>
+	<desc length="4" x="0" y="1"/>
+	<time>0.1</time>
+</anim>
+<anim name="ri_minor_crew_engineer_2_shoot_left">
+	<sheet>ri_minor_crew_engineer_2</sheet>
+	<desc length="4" x="4" y="1"/>
+	<time>0.1</time>
+</anim>
+<anim name="ri_minor_crew_engineer_2_power_down">
+	<sheet>ri_minor_crew_engineer_2</sheet>
+	<desc length="8" x="0" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_crew_engineer_2_power_up">
+	<sheet>ri_minor_crew_engineer_2</sheet>
+	<desc length="10" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_crew_engineer_2_fly">
+	<sheet>ri_minor_crew_engineer_2</sheet>
+	<desc length="1" x="2" y="0"/>
+	<time>1</time>
+</anim>
+<anim name="ri_minor_crew_engineer_2_portrait">
+	<sheet>ri_minor_crew_engineer_2</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
 </FTL>
 
 <!--Federation-->
@@ -66,5 +314,127 @@
 	<sheet>laser_ri_fed_2_phantom</sheet>
 	<desc length="1" x="0" y="0"/>
 	<time>0.3</time>
+</anim>
+
+<animSheet name="ri_minor_fed_4" w="315" h="455" fw="35" fh="35">people/ri_minor_fed_4_base.png</animSheet>
+<anim name="ri_minor_fed_4_clone">
+	<sheet>ri_minor_fed_4</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="ri_minor_fed_4_death_right">
+	<sheet>ri_minor_fed_4</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="ri_minor_fed_4_death_left">
+	<sheet>ri_minor_fed_4</sheet>
+	<desc length="5" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="ri_minor_fed_4_walk_down">
+	<sheet>ri_minor_fed_4</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_fed_4_walk_right">
+	<sheet>ri_minor_fed_4</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_fed_4_walk_up">
+	<sheet>ri_minor_fed_4</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_fed_4_walk_left">
+	<sheet>ri_minor_fed_4</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_fed_4_shoot_down">
+	<sheet>ri_minor_fed_4</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_fed_4_shoot_right">
+	<sheet>ri_minor_fed_4</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_fed_4_shoot_up">
+	<sheet>ri_minor_fed_4</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_fed_4_shoot_left">
+	<sheet>ri_minor_fed_4</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_fed_4_fire_down">
+	<sheet>ri_minor_fed_4</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_fed_4_fire_right">
+	<sheet>ri_minor_fed_4</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_fed_4_fire_up">
+	<sheet>ri_minor_fed_4</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_fed_4_fire_left">
+	<sheet>ri_minor_fed_4</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_fed_4_repair">
+	<sheet>ri_minor_fed_4</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_fed_4_punch_up">
+	<sheet>ri_minor_fed_4</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_fed_4_punch_down">
+	<sheet>ri_minor_fed_4</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="ri_minor_fed_4_teleport">
+	<sheet>ri_minor_fed_4</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="ri_minor_fed_4_type_right">
+	<sheet>ri_minor_fed_4</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="ri_minor_fed_4_type_left">
+	<sheet>ri_minor_fed_4</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="ri_minor_fed_4_type_up">
+	<sheet>ri_minor_fed_4</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="ri_minor_fed_4_type_down">
+	<sheet>ri_minor_fed_4</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="ri_minor_fed_4_portrait">
+	<sheet>ri_minor_fed_4</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
 </anim>
 </FTL>

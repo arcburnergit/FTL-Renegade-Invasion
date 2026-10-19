@@ -106,6 +106,24 @@
 	</launchSounds>
 	<weaponArt>beam_fire</weaponArt> 
 </weaponBlueprint>
+<weaponBlueprint name="DRONE_FIREBEAM_RI_MINOR_DYNASTY_1_JUMP">
+	<type>BEAM</type>
+	<title>Drone Fire Beam</title>
+	<short>Drone Fire Beam</short>
+	<damage>0</damage>
+	<sp>0</sp>
+	<fireChance>10</fireChance>
+	<breachChance>0</breachChance>
+	<speed>1</speed>
+	<rarity>0</rarity>
+	<image>beam_contact</image>
+	<length>45</length>
+	<launchSounds>
+		<sound>beam1</sound>
+		<sound>beam1_2</sound>
+	</launchSounds>
+	<weaponArt>beam_fire</weaponArt> 
+</weaponBlueprint>
 <weaponBlueprint name="DRONE_HULLBEAM_RI_MINOR_DYNASTY_1">
 	<type>BEAM</type>
 	<title>Drone Hull Beam</title>
@@ -125,6 +143,24 @@
 	</launchSounds>
 	<weaponArt>beam_hull</weaponArt> 
 </weaponBlueprint>
+<weaponBlueprint name="DRONE_HULLBEAM_RI_MINOR_DYNASTY_1_JUMP">
+	<type>BEAM</type>
+	<title>Drone Hull Beam</title>
+	<short>Drone Hull Beam</short>
+	<damage>0</damage>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>10</breachChance>
+	<speed>1</speed>
+	<rarity>0</rarity>
+	<image>beam_contact</image>
+	<length>50</length>
+	<launchSounds>
+		<sound>beam1</sound>
+		<sound>beam1_2</sound>
+	</launchSounds>
+	<weaponArt>beam_hull</weaponArt> 
+</weaponBlueprint>
 
 <blueprintList name="LIST_TOGGLE_RI_MINOR_DYNASTY_1">
 	<name>RI_MINOR_DYNASTY_1_FIRE</name>
@@ -133,9 +169,9 @@
 <droneBlueprint name="RI_MINOR_DYNASTY_1_FIRE">
 	<type>COMBAT</type>
 	<tip>tip_toggle_combat</tip>
-	<title>Hellraiser [Fire]</title>
-	<short>Hell [F]</short>
-	<desc>[CURRENT MODE: Fire] Powerful Beam toggle Drone that can switch between Fire and Anti-Hull modes.</desc>
+	<title>Hell-Walker [Fire]</title>
+	<short>Walker [F]</short>
+	<desc>[CURRENT MODE: Fire] When hitting a new room, the beam has a 50% chance to jump to an adjacent room and start either a fire or create a breach depending on the mode.</desc>
 	<power>3</power>
 	<cooldown>1000</cooldown>
 	<dodge>0</dodge>
@@ -150,9 +186,9 @@
 <droneBlueprint name="RI_MINOR_DYNASTY_1_HULL">
 	<type>COMBAT</type>
 	<tip>tip_toggle_combat</tip>
-	<title>Hellraiser [Hull]</title>
-	<short>Hell [H]</short>
-	<desc>[CURRENT MODE: Anti-Hull] Powerful Beam toggle Drone that can switch between Fire and Anti-Hull modes.</desc>
+	<title>Hell-Walker [Hull]</title>
+	<short>Walker [H]</short>
+	<desc>[CURRENT MODE: Anti-Hull] When hitting a new room, the beam has a 50% chance to jump to an adjacent room and start either a fire or create a breach depending on the mode.</desc>
 	<power>3</power>
 	<cooldown>1000</cooldown>
 	<dodge>0</dodge>
@@ -164,10 +200,282 @@
 	<rarity>0</rarity>
 	<iconImage>combat</iconImage>
 </droneBlueprint>
+
+
+<weaponBlueprint name="DRONE_BEAM_RI_MINOR_DYNASTY_2">
+	<type>BEAM</type>
+	<title>Drone Beam</title>
+	<short>Drone Beam</short>
+	<damage>1</damage>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>0</breachChance>
+	<speed>12</speed>
+	<rarity>0</rarity>
+	<image>beam_contact</image>
+	<length>50</length>
+	<launchSounds>
+		<sound>beam1</sound>
+		<sound>beam1_2</sound>
+	</launchSounds>
+	<weaponArt>beam_hull</weaponArt> 
+</weaponBlueprint>
+<droneBlueprint name="RI_MINOR_DYNASTY_2">
+	<type>COMBAT</type>
+	<title>Accelerator</title>
+	<short>Accelerator</short>
+	<desc>This drone increases in speed over time, topping out at 42 speed after 20 seconds.</desc>
+	<power>3</power>
+	<cooldown>1000</cooldown>
+	<dodge>0</dodge>
+	<speed>2</speed>
+	<cost>60</cost>
+	<bp>3</bp>
+	<droneImage>drone_ri_minor_dynasty_2</droneImage>
+	<weaponBlueprint>DRONE_BEAM_RI_MINOR_DYNASTY_2</weaponBlueprint>
+	<rarity>0</rarity>
+	<iconImage>combat</iconImage>
+</droneBlueprint>
 </FTL>
 
 <!--Engi-->
 <FTL>
+<crewBlueprint name="ri_minor_crew_engi_1_manning">
+	<title>Drone</title>
+	<short>Drone</short>
+	<desc>YOU SHOULD NEVER SEE THIS.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<powerList>
+		<power>DRONE</power>
+	</powerList>
+</crewBlueprint>
+<droneBlueprint name="RI_MINOR_ENGI_1_MANNING">
+	<type>BATTLE</type>
+	<locked>1</locked>
+	<tip>tip_crew</tip>
+	<title>Sec-Unit</title>
+	<short>Sec-Unit</short>
+	<desc>A unique manning drone that transforms into a battle drone when threatened by boarders.
+    
+-100 HP, 1.2x movement speed
+-Provides power to occupied system
+-Can man systems at lvl2 skill level</desc>
+	<power>0</power>
+	<cost>50</cost>
+	<bp>3</bp>
+	<rarity>0</rarity>
+	<iconImage>battle</iconImage>
+</droneBlueprint>
+<crewBlueprint name="ri_minor_crew_engi_1_defend">
+	<title>Drone</title>
+	<short>Drone</short>
+	<desc>YOU SHOULD NEVER SEE THIS.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<powerList>
+		<power>DRONE</power>
+	</powerList>
+</crewBlueprint>
+<droneBlueprint name="RI_MINOR_ENGI_1_DEFEND">
+	<type>BATTLE</type>
+	<locked>1</locked>
+	<title>Sec-Unit</title>
+	<short>Sec-Unit</short>
+	<desc>A unique manning drone that transforms into a battle drone when threatened by boarders.
+    
+-175 HP, 1.1x combat damage
+-Regenerates 6.4hp/s if unharmed for 9 seconds</desc>
+	<power>2</power>
+	<cost>50</cost>
+	<bp>3</bp>
+	<rarity>0</rarity>
+	<iconImage>battle</iconImage>
+	<colorList>
+		<layer>
+			<color r="255" g="184" b="91" a="0.7"/>
+		</layer>
+	</colorList>
+</droneBlueprint>
+	
+<blueprintList name="LIST_TOGGLE_RI_MINOR_ENGI_2">
+	<name>RI_MINOR_ENGI_2_REPAIR</name>
+	<name>RI_MINOR_ENGI_2_DEFENCE</name>
+</blueprintList>
+<droneBlueprint name="RI_MINOR_ENGI_2_REPAIR">
+	<type>SHIP_REPAIR</type>
+	<tip>tip_toggle_combat</tip>
+	<title>Hull-Defender [Repair]</title>
+	<short>Defender [R]</short>
+	<desc>[CURRENT MODE: Repair] Can be toggled between repairing 3-5 damage to your hull or defending your ship from lasers and solid projectiles.</desc>
+	<power>2</power>
+	<cooldown>	00</cooldown>
+	<dodge>0</dodge>
+	<speed>20</speed>
+	<cost>90</cost>
+	<bp>5</bp>
+	<droneImage>drone_ri_minor_engi_2</droneImage>
+	<image>weapons/laser_light2_strip4.png</image>
+	<rarity>0</rarity>
+	<iconImage>Srepair</iconImage>
+</droneBlueprint>
+<droneBlueprint name="RI_MINOR_ENGI_2_DEFENCE">
+	<type>DEFENSE</type>
+	<level>1</level>
+	<target>LASERS</target>
+	<tip>tip_toggle_combat</tip>
+	<title>Hull-Defender [Defence]</title>
+	<short>Defender [D]</short>
+	<desc>[CURRENT MODE: Defence] Can be toggled between repairing 3-5 damage to your hull or defending your ship from lasers and solid projectiles.
+	Reload: 500 MS</desc>
+	<power>2</power>
+	<cooldown>500</cooldown>
+	<dodge>0</dodge>
+	<speed>5</speed>
+	<cost>90</cost>
+	<bp>2</bp>
+	<droneImage>drone_ri_minor_engi_2_d</droneImage>
+	<weaponBlueprint>DRONE_LASER_DEFENSE</weaponBlueprint>
+	<iconImage>defense</iconImage>
+	<rarity>0</rarity>
+</droneBlueprint>
+
+<weaponBlueprint name="RI_MINOR_ENGI_3">
+	<type>LASER</type>
+	<flavorType>Ion Blast</flavorType>
+	<title>Heavy Ion</title>
+	<short>Heavy Ion</short>
+	<tip>tip_ion</tip>
+	<locked>1</locked>
+	<desc>This Heavy Ion charges up after each shot, at 3 charges the next shot will do twice the ion damage and consume all charges.</desc>
+	<tooltip>Fires a single blast that does 2 ion damage. Can hit and disable shields as well as systems.</tooltip>
+	<damage>0</damage>
+	<spin>720</spin>
+	<ion>3</ion>
+	<speed>40</speed>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<stunChance>3</stunChance>
+	<cooldown>15</cooldown>
+	<power>2</power>
+	<cost>55</cost>
+	<bp>4</bp>
+	<rarity>3</rarity>
+	<image>ion_heavy</image>
+	<boost>
+		<type>damage</type>
+		<amount>0</amount>
+		<count>4</count>
+	</boost>
+	<explosion>explosion_small_ion</explosion>
+	<launchSounds>
+		<sound>ionShoot1</sound>
+		<sound>ionShoot2</sound>
+		<sound>ionShoot3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>ionHit1</sound>
+		<sound>ionHit2</sound>
+		<sound>ionHit3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>ionShields1</sound>
+		<sound>ionShields2</sound>
+		<sound>ionShields3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>ri_minor_engi_3</weaponArt>
+	<iconImage>ion</iconImage>
+</weaponBlueprint>
+</FTL>
+
+<!--Engineer-->
+<FTL>
+<weaponBlueprint name="DRONE_BEAM_RI_MINOR_ENGINEER_1">
+	<type>BEAM</type>
+	<tip>tip_beams</tip>
+	<title>Drone Beam</title>
+	<damage>1</damage>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>2</breachChance>
+	<speed>25</speed>
+	<rarity>0</rarity>
+	<image>beam_contact</image>
+	<length>65</length>
+	<launchSounds>
+		<sound>beam1</sound>
+		<sound>beam1_2</sound>
+	</launchSounds>
+	<weaponArt>beam_1</weaponArt>
+</weaponBlueprint>
+<droneBlueprint name="RI_MINOR_ENGINEER_1">
+	<type>COMBAT</type>
+	<tip>tip_combat</tip>
+	<title>Twofold Drone</title>
+	<short>Twofold D.</short>
+	<desc>This beam drone creates a copy of itself when spawned, these drones are linked, if one is destroyed or depowered, so is the other.</desc>
+	<power>3</power>
+	<cooldown>1000</cooldown>
+	<dodge>10</dodge>
+	<speed>10</speed>
+	<cost>60</cost>
+	<bp>3</bp>
+	<droneImage>drone_ri_minor_engineer_1</droneImage>
+	<weaponBlueprint>DRONE_BEAM_RI_MINOR_ENGINEER_1</weaponBlueprint>
+	<rarity>0</rarity>
+	<iconImage>combat</iconImage>
+</droneBlueprint>
+<droneBlueprint name="RI_MINOR_ENGINEER_1_SUBDRONE">
+	<type>COMBAT</type>
+	<tip>tip_combat</tip>
+	<title>Twofold Drone</title>
+	<short>Twofold D.</short>
+	<desc>YOU SHOULD NEVER SEE THIS</desc>
+	<power>3</power>
+	<cooldown>1000</cooldown>
+	<dodge>10</dodge>
+	<speed>10</speed>
+	<cost>60</cost>
+	<bp>3</bp>
+	<droneImage>drone_ri_minor_engineer_1</droneImage>
+	<weaponBlueprint>DRONE_BEAM_RI_MINOR_ENGINEER_1</weaponBlueprint>
+	<rarity>0</rarity>
+	<iconImage>combat</iconImage>
+</droneBlueprint>
+
+<crewBlueprint name="ri_minor_crew_engineer_2">
+	<title>Drone</title>
+	<short>Drone</short>
+	<desc>YOU SHOULD NEVER SEE THIS.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<powerList>
+		<power>DRONE</power>
+	</powerList>
+</crewBlueprint>
+<droneBlueprint name="RI_MINOR_ENGINEER_2">
+	<type>BOARDER</type>
+	<locked>1</locked>
+	<title>System Analyst</title>
+	<short>Analyst</short>
+	<desc>Controllable small airborne recon drone that explodes on death. Takes 30% damage. Systems in the same room as this drone take 2x damage and are sabotaged 2x as fast.
+    
+-50 HP, 0.7x combat damage taken
+-2.5x movement speed, rapidly destroys locked doors
+-Reveals lifeforms and adjacent rooms
+-Explodes on death, inflicting 30 crew damage, a 3 seconds stun, and 1 system damage. 30% chance to start fires.</desc>
+	<power>0</power>
+	<cost>50</cost>
+	<speed>15</speed>
+	<bp>3</bp>
+	<rarity>0</rarity>
+	<iconImage>battle</iconImage>
+</droneBlueprint>
 </FTL>
 
 <!--Federation-->
@@ -201,7 +509,6 @@
 	<desc>Upon impacting the enemy ship, the Lasers of this weapon will create 5 echo shards targetted at random rooms on the enemy ship, these will do 10 crew damage and stun for 1 second.</desc>
 	<tooltip>Fires 3 lasers, 1 damage each.</tooltip>
 	<damage>1</damage>
-	<accuracyMod>100</accuracyMod>
 	<shots>3</shots>
 	<speed>120</speed>
 	<sp>0</sp>
@@ -286,6 +593,109 @@
 	<weaponArt>ri_minor_fed_2</weaponArt>
 	<iconImage>laser</iconImage>
 </weaponBlueprint>
+
+<weaponBlueprint name="DRONE_BEAM_RI_MINOR_FED_3">
+	<type>BEAM</type>
+	<tip>tip_beams</tip>
+	<title>Drone Beam</title>
+	<damage>1</damage>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>0</breachChance>
+	<speed>10</speed>
+	<rarity>0</rarity>
+	<image>beam_contact</image>
+	<length>45</length>
+	<launchSounds>
+		<sound>beam1</sound>
+		<sound>beam1_2</sound>
+	</launchSounds>
+	<weaponArt>beam_1</weaponArt>
+</weaponBlueprint>
+<droneBlueprint name="RI_MINOR_FED_3">
+	<type>COMBAT</type>
+	<tip>tip_toggle_combat</tip>
+	<title>Laser-Beam Drone</title>
+	<short>Laser-Beam</short>
+	<desc>The switch on this drone got stuck halfway between Laser and Beam, so now it fires both, at the cost of drone speed.</desc>
+	<power>3</power>
+	<cooldown>1000</cooldown>
+	<dodge>0</dodge>
+	<speed>15</speed>
+	<cost>85</cost>
+	<bp>3</bp>
+	<droneImage>drone_ri_minor_fed_3</droneImage>
+	<weaponBlueprint>DRONE_BEAM_RI_MINOR_FED_3</weaponBlueprint>
+	<rarity>0</rarity>
+	<iconImage>combat</iconImage>
+</droneBlueprint>
+
+<crewBlueprint name="ri_minor_fed_4">
+    <desc>This soldier is able to resurrect themselves and become briefly immortal, ability can only be used once per jump.
+	
+	Inherited Human stat: minor suffocation resistance</desc>
+    <cost>65</cost>
+    <title>Human Cheater</title>
+    <short>Cheater</short>
+    <rarity>0</rarity>
+    <powerList>
+        <power>Passive Ability: Cheat Death, come back to life at 1 health, invulerable for 10 seconds with 25% damage and 25% healing.</power>
+        <power>Inflicts 1.2x damage in crew combat</power>
+		<power>Takes 0.7x damage from crew combat and 0.6x from fires</power>
+        <power>Learns skills much faster</power>
+    </powerList>
+</crewBlueprint>
 </FTL>
 
-<!---->
+<!--FreeMantis-->
+<FTL>
+<weaponBlueprint name="BOMB_FREE">
+	<type>BOMB</type>
+	<tip>tip_missiles_recycler</tip>
+	<title>Recycler Bomb</title>
+	<short>Recycler B.</short>
+	<locked>1</locked>
+	<desc>Self-teleporting explosive that converts useless materials into explosives. Does not require ammunition, but has a longer cooldown and can only fire a limited number of times each fight.</desc>
+	<tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+	<damage>0</damage>
+	<sysDamage>2</sysDamage>
+	<persDamage>2</persDamage>
+	<accuracyMod>30</accuracyMod>
+	<missiles>0</missiles>
+	<shotLimit>4</shotLimit>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>17</cooldown>
+	<power>1</power>
+	<cost>52</cost>
+	<bp>4</bp>
+	<rarity>4</rarity>
+	<image>bomb_small</image>
+	<explosion>explosion_random</explosion>
+	<launchSounds>
+		<sound>bombTeleport</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<weaponArt>bomblauncher_recycle</weaponArt>
+	<iconImage>bomb</iconImage>
+</weaponBlueprint>
+
+<crewBlueprint name="mantis_free">
+	<desc>The friendly Free Mantis have rebelled from the Hive, and now live their lives independent and addicted to their synthesized pheromones.
+	
+	Inherited Mantis stat: halved repair speed</desc>
+	<title>Free Mantis</title>
+	<short>Free Mantis</short>
+	<cost>50</cost>
+	<bp>2</bp>
+	<rarity>2</rarity>
+	<powerList>
+		<power>Active Ability: Temporarily greatly increases speed and damage</power>
+		<power>Inflicts 1.2x damage in crew combat</power>
+	</powerList>
+</crewBlueprint>
+</FTL>

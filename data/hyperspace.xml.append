@@ -2,5 +2,172 @@
 	<mod-append:script>data/ri_scripts/core.lua</mod-append:script>
 	<mod-append:script>data/ri_scripts/weapons.lua</mod-append:script>
 	<mod-append:script>data/ri_scripts/drones.lua</mod-append:script>
+	<mod-append:script>data/ri_scripts/crew.lua</mod-append:script>
 	<mod-append:script>data/ri_scripts/augments.lua</mod-append:script>
+</mod:findLike>
+
+<mod:findLike type="drones" reverse="false" limit="1">
+	<mod-append:drone name="RI_MINOR_ENGI_1_MANNING">
+		<crewBlueprint>ri_minor_crew_engi_1_manning</crewBlueprint>
+		<tooltipName>Sec-Unit</tooltipName>
+	</mod-append:drone>
+	<mod-append:drone name="RI_MINOR_ENGI_1_DEFEND">
+		<crewBlueprint>ri_minor_crew_engi_1_defend</crewBlueprint>
+		<tooltipName>Sec-Unit</tooltipName>
+	</mod-append:drone>
+	<mod-append:drone name="RI_MINOR_ENGINEER_2">
+		<crewBlueprint>ri_minor_crew_engineer_2</crewBlueprint>
+		<tooltipName>System Analyst</tooltipName>
+	</mod-append:drone>
+</mod:findLike>
+
+<mod:findLike type="crew" reverse="false" limit="1">
+	<mod-append:race name="ri_minor_crew_engi_1_manning">
+		<selectable>true</selectable>
+		<controllable>true</controllable>
+		<canMan>true</canMan>
+		<canFight>false</canFight>
+		<canRepair>false</canRepair>
+		<canSabotage>false</canSabotage>
+		<canSuffocate>false</canSuffocate>
+		<bonusPower>1</bonusPower>
+		<droneMoveFromManningSlot>true</droneMoveFromManningSlot>
+		<stunMultiplier>0.25</stunMultiplier>
+		<droneAI>
+			<manAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+		<fireDamageMultiplier>0.25</fireDamageMultiplier>
+		<moveSpeedMultiplier>1.2</moveSpeedMultiplier>
+		<animBase>mantis</animBase>
+		<defaultSkillLevel>2</defaultSkillLevel>
+		<powerEffect>
+			<cooldown>10</cooldown>
+			<jumpCooldown>reset</jumpCooldown>
+			<req>
+				<enemyInRoom/>
+			</req>
+			<buttonText>Transform</buttonText>
+			<tooltip>Ready: Transform into a battle drone in the presence of boarders.</tooltip>
+			<cooldownColor r="255" g="95" b="220"/>
+			<transformRace>ri_minor_crew_engi_1_defend</transformRace>
+			<activateWhenReady>true</activateWhenReady>
+		</powerEffect>
+	</mod-append:race>
+	<mod-append:race name="ri_minor_crew_engi_1_defend">
+		<selectable>true</selectable>
+		<canFight>true</canFight>
+		<canSabotage>true</canSabotage>
+		<canRepair>false</canRepair>
+		<canSuffocate>false</canSuffocate>
+		<canMan>false</canMan>
+		<maxHealth>175</maxHealth>
+		<stunMultiplier>0.25</stunMultiplier>
+		<canTeleport>false</canTeleport>
+		<resistsMindControl>true</resistsMindControl>	<!-- salvage event -->
+		<noClone>true</noClone>
+		<droneAI>
+			<fightAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+		<damageMultiplier>1.1</damageMultiplier>
+		<fireDamageMultiplier>0.25</fireDamageMultiplier>
+		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+		<controllable>true</controllable>
+		<powerEffect name="ri_minor_crew_engi_1_defend_power">
+			<cooldown>10</cooldown>
+			<jumpCooldown>reset</jumpCooldown>
+			<req>
+				<enemyInRoom/>
+			</req>
+			<buttonText>Transform</buttonText>
+			<tooltip>Ready: Transform into a manning drone.</tooltip>
+			<cooldownColor r="255" g="95" b="220"/>
+			<transformRace>ri_minor_crew_engi_1_manning</transformRace>
+			<activateWhenReady>true</activateWhenReady>
+		</powerEffect>
+	</mod-append:race>
+	<mod-append:race name="ri_minor_crew_engineer_2">
+		<selectable>true</selectable>
+		<controllable>true</controllable>
+		<canFight>false</canFight>
+		<canRepair>false</canRepair>
+		<canSabotage>false</canSabotage>
+		<canMan>false</canMan>
+		<canSuffocate>false</canSuffocate>
+		<maxHealth>50</maxHealth>
+		<damageTakenMultiplier>0.70</damageTakenMultiplier>
+		<fireDamageMultiplier>0.25</fireDamageMultiplier>
+		<moveSpeedMultiplier>2.5</moveSpeedMultiplier>
+		<detectsLifeforms>true</detectsLifeforms>
+		<isTelepathic>true</isTelepathic>
+		<stunMultiplier>0.25</stunMultiplier>
+		<animBase>mantis</animBase>
+		<animSheet>ri_minor_crew_engineer_2</animSheet>
+		<shootingSounds>
+			<shootingSound>ionHit1</shootingSound>
+			<shootingSound>ionHit2</shootingSound>
+			<shootingSound>ionHit3</shootingSound>
+		</shootingSounds>
+		<droneAI>
+			<fightAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+		<deathEffect>
+			<sysDamage>1</sysDamage>
+			<persDamage>2</persDamage>
+			<stun>3</stun>
+			<fireChance>3</fireChance>
+			<friendlyFire>true</friendlyFire>
+			<shipFriendlyFire>true</shipFriendlyFire>
+		</deathEffect>
+	</mod-append:race>
+	<mod-append:race name="ri_minor_fed_4">
+		<damageMultiplier>1.2</damageMultiplier>
+		<damageTakenMultiplier>0.7</damageTakenMultiplier>
+		<fireDamageMultiplier>0.6</fireDamageMultiplier>
+		<suffocationModifier>0.83</suffocationModifier>
+		<animBase>human</animBase>
+		<deathSounds>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+		</deathSounds>
+		<skills>
+			<piloting req="10"/>
+			<engines req="10"/>
+			<shields req="43"/>
+			<weapons req="50"/>
+			<repair req="12"/>
+			<combat req="4"/>
+		</skills>
+		<powerEffect name="ri_minor_crew_fed_4_cheat">
+			<cooldown>1</cooldown>
+			<jumpCooldown>full</jumpCooldown>
+			<req>
+				<maxHealth>0</maxHealth>
+			</req>
+			<powerCharges>1</powerCharges>
+			<buttonText>CHEAT</buttonText>
+			<powerSounds>
+				<powerSound>ionHit1</powerSound>
+			</powerSounds>
+			<tooltip>Once per jump, Cheat Death for 10 seconds.</tooltip>
+			<cooldownColor r="114" g="20" b="51"/>
+			<activateWhenReady>false</activateWhenReady>
+			<temporaryEffect>
+				<duration>10</duration>
+				<cooldownColor r="114" g="20" b="51"/>
+				<finishSounds>
+					<finishSound>shieldsDown</finishSound>
+				</finishSounds>
+				<animSheet>ri_minor_fed_4_cheat_death</animSheet>
+				<allDamageTakenMultiplier>0</allDamageTakenMultiplier>
+				<resistsMindControl>true</resistsMindControl>
+				<healSpeed>0.25</healSpeed>
+				<damageMultiplier>0.3</damageMultiplier>
+			</temporaryEffect>
+		</powerEffect>
+	</mod-append:race>
+	<mod-append:race name="ri_minor_freeman_2">
+	</mod-append:race>
 </mod:findLike>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FTL>
+
+<mod:findName type="event" name="COMBAT_CHECK_TOGGLE">
+	
+	<mod-append:choice req="RI_MINOR_DYNASTY_1_FIRE" blue="false">
+		<text>(Hell-Walker) Set the state of the drone. [Current mode: Laser].</text>
+		<event load="COMBAT_CHECK_RI_MINOR_DYNASTY_1_FIRE" />
+	</mod-append:choice>
+	<mod-append:choice req="RI_MINOR_DYNASTY_1_HULL" blue="false">
+		<text>(Hell-Walker) Set the state of the drone. [Current mode: Beam].</text>
+		<event load="COMBAT_CHECK_RI_MINOR_DYNASTY_1_HULL" />
+	</mod-append:choice>
+	
+	<mod-append:choice req="RI_MINOR_ENGI_2_REPAIR" blue="false">
+		<text>(Hull-Defender) Set the state of the drone. [Current mode: Repair].</text>
+		<event load="COMBAT_CHECK_RI_MINOR_ENGI_2_REPAIR" />
+	</mod-append:choice>
+	<mod-append:choice req="RI_MINOR_ENGI_2_DEFENCE" blue="false">
+		<text>(Hull-Defender) Set the state of the drone. [Current mode: Defence].</text>
+		<event load="COMBAT_CHECK_RI_MINOR_ENGI_2_DEFENCE" />
+	</mod-append:choice>
+</mod:findName>
+
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					Hell-Walker
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->	
+<event name="COMBAT_CHECK_RI_MINOR_DYNASTY_1_FIRE">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Anti-Hull Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="RI_MINOR_DYNASTY_1_FIRE" />
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="RI_MINOR_DYNASTY_1_HULL" />
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD" />
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Return to the toggle menu.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD" />
+	</choice>
+</event>
+<event name="COMBAT_CHECK_RI_MINOR_DYNASTY_1_HULL">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Fire Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="RI_MINOR_DYNASTY_1_HULL" />
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="RI_MINOR_DYNASTY_1_FIRE" />
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD" />
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Return to the toggle menu.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD" />
+	</choice>
+</event>
+
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					Hull-Defender
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->	
+<event name="COMBAT_CHECK_RI_MINOR_ENGI_2_REPAIR">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Defence Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="RI_MINOR_ENGI_2_REPAIR" />
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="RI_MINOR_ENGI_2_DEFENCE" />
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD" />
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Return to the toggle menu.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD" />
+	</choice>
+</event>
+<event name="COMBAT_CHECK_RI_MINOR_ENGI_2_DEFENCE">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Repair Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="RI_MINOR_ENGI_2_DEFENCE" />
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="RI_MINOR_ENGI_2_REPAIR" />
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD" />
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Return to the toggle menu.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD" />
+	</choice>
+</event>
+
+</FTL>
